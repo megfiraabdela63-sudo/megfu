@@ -1,0 +1,192 @@
+/* 💜 Global Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #3e0ecf, #8a2be2, #c77dff);
+  color: #f8f6ff;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* 🌈 Navigation Bar */
+nav {
+  background: rgba(50, 0, 90, 0.9);
+  text-align: center;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+nav a {
+  color: #f8f6ff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffb3ff;
+  text-shadow: 0 0 10px #fff;
+  transform: scale(1.1);
+}
+
+/* 💫 Section */
+section {
+  background: rgba(255, 255, 255, 0.1);
+  width: 85%;
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 💜 Headings */
+h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-shadow: 0 0 8px #e2a9ff;
+}
+
+p {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #f2e7ff;
+}
+
+/* 📩 Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+label {
+  font-weight: 600;
+  color: #f1eaff;
+  font-size: 1.05rem;
+}
+
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ddd;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px #b066ff;
+}
+
+/* ✨ Submit Button */
+button {
+  background: linear-gradient(135deg, #6a0dad, #9b5de5, #c77dff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(155, 93, 229, 0.5);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #b066ff, #7209b7);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(192, 128, 255, 0.8);
+}
+
+/* 📞 Contact Info */
+strong {
+  color: #ffccff;
+}
+
+section p:last-of-type {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #f4dbff;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+/* 💡 Phone Number */
+section p:last-of-type::after {
+  content: " | Phone: +251965588246";
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
+/* 💜 Optional Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(50, 0, 90, 0.9);
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 60px;
+  border-top: 2px solid #b066ff;
+}

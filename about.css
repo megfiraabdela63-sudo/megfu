@@ -1,0 +1,109 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #a8e063, #56ab2f);
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🌟 Navigation Bar */
+nav {
+  background: rgba(0, 100, 0, 0.85);
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #775fc5e3;
+  transform: scale(1.1);
+  text-shadow: 0 0 5px #fff;
+}
+
+/* ✨ Section Styling */
+section {
+  background: #ffffffc9;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 900px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 🌼 Headings */
+h2 {
+  color: #116530;
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #c0ffc0;
+}
+
+h3 {
+  color: #0b6623;
+  font-size: 1.6rem;
+  border-left: 5px solid #00b050;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+/* 🖋️ Paragraphs */
+p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+/* 💫 Strong Highlight */
+strong {
+  color: #0a8a43;
+  font-weight: bold;
+}
+
+/* 🌈 Hover Glow Effect */
+section p:hover {
+  color: #0a5d23;
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+/* 🌸 Footer (Optional) */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004d00;
+  color: white;
+  font-size: 0.9rem;
+  border-top: 3px solid #00ff99;
+}
+
+/* 🌠 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

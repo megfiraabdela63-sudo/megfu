@@ -1,0 +1,144 @@
+/* ===== Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #e0f7fa, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background-color: #004d80;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd54f;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #004d80, #00bcd4);
+  color: white;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.15);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+header a.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: #ffd54f;
+  color: #004d80;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+header a.button:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* ===== Sections ===== */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffffd9;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  text-align: center;
+  color: #004d80;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #004d80;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+ul li {
+  background: #f0faff;
+  border-left: 5px solid #00bcd4;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+/* ===== Form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #004d80;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00796b;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header h1 { font-size: 34px; }
+  header p { font-size: 16px; }
+  nav a { font-size: 16px; margin: 0 10px; }
+}

@@ -1,0 +1,138 @@
+/* 🩶 Global Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2e2e2e, #555);
+  color: #f1f1f1;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* 🔗 Navigation Bar */
+nav {
+  background: #1f1f1f;
+  text-align: center;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #00adb5;
+  text-shadow: 0 0 8px #00adb5;
+  transform: scale(1.1);
+}
+
+/* 📁 Section */
+section {
+  background: rgba(255, 255, 255, 0.05);
+  width: 85%;
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.08);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 🩶 Headings */
+h2 {
+  text-align: center;
+  color: #f9f9f9;
+  font-size: 2.3rem;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.2);
+}
+
+h3 {
+  color: #00adb5;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* 📦 Project Cards */
+article {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 6px solid #00adb5;
+  border-radius: 12px;
+  margin: 25px 0;
+  padding: 25px 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease;
+}
+
+article:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  border-left-color: #eeeeee;
+}
+
+/* ✨ Paragraphs */
+p {
+  color: #dddddd;
+  font-size: 1.05rem;
+  letter-spacing: 0.3px;
+  margin-top: 5px;
+}
+
+/* ⚡ Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
+/* ⚙️ Footer (optional) */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1f1f1f;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 60px;
+  border-top: 2px solid #333;
+}
